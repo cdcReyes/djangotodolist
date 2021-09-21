@@ -1,0 +1,9 @@
+body {
+    background: url("images/background.gif") 100% no-repeat fixed;
+    height: 650px;
+    padding: 100px 0 0 0;
+  }
+  
+  li a {
+    color: paleturquoise;
+  }

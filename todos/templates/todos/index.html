@@ -1,0 +1,13 @@
+{% if latest_todo_list %}
+    <ul>
+    {% for todo in latest_todo_list %}
+        <li><a href="{% url 'todos:detail' todo.id %}">{{ todo.todo_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No todos are available.</p>
+{% endif %}
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'todos/style.css' %}">
